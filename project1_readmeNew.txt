@@ -1,32 +1,4 @@
 
-lin_regression_Matlab.txt contains the linear regression Matlab codes.
-
-lin_regression_Python.txt contains the linear regression Python codes.
-
-------------------------------------------------------------------
-In ATNT50 directory we have
-
-trainDataXY.txt   
-
-It contains 45 images. image 1-9 from class 1. image 10-18 from class 2. etc.
-Each image is a column. 1st row are class labels.
-
-testDataXY.txt     
-
-It contain 5 images. 
-Each image is a column. 1st row are class labels.
-
-------------------------------------------------------------------------------------
-You train the classifier using training data. Once classifier is trained,
-you classifier the data in testData, and compare the obtained class labels 
-to the ground-truth label provided there. 
-
-These two data are simple training and testing data.
-They are warm-up data, so you can see how your classifier work on this simple data. 
-
--------------------------------------------------------------------------------------
-
-
 data set: ATNT-face-image400.txt  :
 
 Text file. 
@@ -62,15 +34,15 @@ that your classifier works correctly.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%    Your 5 tasks   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-(1)  Implement KNN and Centroid methods by yourself.
-(2)  Learn to use Linear Regression (codes are provided).
+(1)  Implement KNN and Centroid methods by yourself(without using any libraries).
+(2)  Learn to use Linear Regression.
 (3) Learn to use Support Vector Machine (SVM) in Matlab or Python.
 (4) Learn to use cross-validation related subroutine/functions in Matlab or Python.
 (5) Implement the data handler of Task E.
 
 
 
-(A£©
+(A)
 Use the data-handler to select "A,B,C,D,E" classes from the hand-written-letter data. 
 From this smaller dataset, Generate a training and test data: for each class
 using the first 30 images for training and the remaining 9 images for test.
@@ -121,7 +93,7 @@ and the list of corresponding class labels.
 Example 3. Generate a 2-class data as the input to the 2-class SVM classifier.
   From the hand-written-letter data, you first use "pickDataClass" subroutine and pick 
   "C" and "F" classes and store them in a file or an array.
-  Then you use ¡°splitData2TestTrain" split the data: using the first 30 images in "C" and in "F" 
+  Then you use Â¡Â°splitData2TestTrain" split the data: using the first 30 images in "C" and in "F" 
   to form the training data, and using the remaining 9 images in each class to form the 
   test data. Thus the training data contains 30*2 images, the test data contains 9*2 images.
 
