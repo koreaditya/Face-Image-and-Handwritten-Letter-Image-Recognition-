@@ -23,8 +23,7 @@ class dataHandler(object):
         test_instance=test_instance.split(':')
         self.lead=int(test_instance[0])
         self.trail=int(test_instance[1])
-        self.lead1=int(test_instance[0])
-        self.trail1=int(test_instance[1])
+        
         testdata=[]
         traindata=[]
         
