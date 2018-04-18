@@ -94,11 +94,11 @@ and the list of corresponding class labels.
 (The data in ATNT50 are generated in this way)
 
 Example 3. Generate a 2-class data as the input to the 2-class SVM classifier.
-  From the hand-written-letter data, you first use "pickDataClass" subroutine and pick 
-  "C" and "F" classes and store them in a file or an array.
-  Then you use ¡°splitData2TestTrain" split the data: using the first 30 images in "C" and in "F" 
-  to form the training data, and using the remaining 9 images in each class to form the 
-  test data. Thus the training data contains 30*2 images, the test data contains 9*2 images.
+From the hand-written-letter data, you first use "pickDataClass" subroutine and pick 
+"C" and "F" classes and store them in a file or an array.
+Then you use ¡°splitData2TestTrain" split the data: using the first 30 images in "C" and in "F" 
+to form the training data, and using the remaining 9 images in each class to form the 
+test data. Thus the training data contains 30*2 images, the test data contains 9*2 images.
 
 You need to write:
 
@@ -107,10 +107,9 @@ subroutine-1: pickDataClass(filename, class_ids)
   filename: char_string specifying the data file to read. For example, 'ATNT_face_image.txt'
   class_ids:  array that contains the classes to be pick. For example: (3, 5, 8, 9)
   Returns: an multi-dimension array or a file, containing the data (both attribute vectors and class labels) 
-           of the selected classes
+  of the selected classes
   We use this subroutine to pick a small part of the data to do experiments. For example for handwrittenletter data,
   we can pick classes "C" and "F" for a 2-class experiment. Or we pick "A,B,C,D,E" for a 5-class experiment. 
-
 
   test_instances: the data instances in each class to be used as test data.
   We assume that the remaining data instances in each class (after the test data instances are taken out) will be
@@ -118,11 +117,12 @@ subroutine-1: pickDataClass(filename, class_ids)
 
 
 subroutine-2: splitData2TestTrain(filename, number_per_class,  test_instances)
+
   filename: char_string specifying the data file to read. This can also be an array containing input data.
   number_per_class: number of data instances in each class (we assume every class has the same number of data instances)
   test_instances: the data instances in each class to be used as test data.
-                  We assume that the remaining data instances in each class (after the test data instances are taken out) 
-                  will be training_instances 
+  We assume that the remaining data instances in each class (after the test data instances are taken out) 
+  will be training_instances 
   Return/output: Training_attributeVector(trainX), Training_labels(trainY), Test_attributeVectors(testX), Test_labels(testY)
   The data should easily feed into a classifier.
 
@@ -131,6 +131,7 @@ subroutine-2: splitData2TestTrain(filename, number_per_class,  test_instances)
            In every class, first 20 images for testing, remaining 19 images for training
 
 subroutine-3:
+
    This routine will store (trainX,trainY) into a training data file, 
    and store (testX,testY) into a test data file. The format of these files is determined by 
    student's choice: could be a Matlab file, a text file, or a file convenient for Python.  
@@ -139,6 +140,7 @@ subroutine-3:
 
 
 Subroutine-4: "letter_2_digit_convert" that converts a character string to an integer array. 
+
    For example ,letter_2_digit_convert('ACFG') returns array (1, 3, 6, 7). 
    
 A COMPUTER QUIZ problem could be: Pick 5 classes with letters 'great' from the hand-written-letter data, and 
