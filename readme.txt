@@ -1,6 +1,6 @@
 # Face-Image-and-Handwritten-Letter-Image-Recognition-
-Developed Machine Learning models in Python to correctly Recognize handwritten letter and face images by training and later testing the models. The machine learning algorithms developed were Linear Regression, Support Vector Machine, K- Nearest Neighbor and Nearest Centroid Classifier.
-
+Developed Machine Learning models in Python to correctly Recognize handwritten letter and face images by training and later testing the models. 
+The machine learning algorithms developed were Linear Regression, Support Vector Machine, K- Nearest Neighbor and Nearest Centroid Classifier.
 data set: ATNT-face-image400.txt  :
 
 Text file. 
