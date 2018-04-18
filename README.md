@@ -76,6 +76,7 @@ for each classifier. Also, the average of these 5 accuracy numbers.
     Plot them on one curve in the same figure as in task (D). Do you see some trend?
 
 (E) write data handler.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Data handler  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Data handler will help you to "extract a small part of a input data" and
@@ -139,10 +140,11 @@ subroutine-3:
 
 Subroutine-4: "letter_2_digit_convert" that converts a character string to an integer array. 
    For example ,letter_2_digit_convert('ACFG') returns array (1, 3, 6, 7). 
-   A COMPUTER QUIZ problem could be: Pick 5 classes with letters 'great' from the hand-written-letter data, and 
-     generate training and testing data using first 20 images of each class for training and the rest 19 images for test.
-     You will need to use  letter_2_digit_convert('GREAT') to convert to numbers and then subroutine-1 to pick the subset
-     of the needed data.
+   
+A COMPUTER QUIZ problem could be: Pick 5 classes with letters 'great' from the hand-written-letter data, and 
+generate training and testing data using first 20 images of each class for training and the rest 19 images for test.
+You will need to use  letter_2_digit_convert('GREAT') to convert to numbers and then subroutine-1 to pick the subset
+of the needed data.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
