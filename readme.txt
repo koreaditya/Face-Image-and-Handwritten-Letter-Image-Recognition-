@@ -7,9 +7,11 @@ data set: ATNT-face-image400.txt  :
 
 Text file. 
 1st row is cluster labels. 
-2nd-end rows: each column is a feature vectors (vector length=28x23).
+2nd-end rows: each column represents a feature vectors of Faceimages (vector length=28x23).
 
 Total 40 classes. each class has 10 images. Total 40*10=400 images
+
+Data dimension 645X400
 
 ----------------------------------------------------------------------------------------
 
@@ -20,7 +22,9 @@ Text file.
 2nd-end rows: each column is a feature vectors (vector length=20x16).
 
 Total 26 classes. each class has 39 images. Total 26*39=1014 images.
+Each class number corresponds to a Letter. For example Class 1 represents A, Class 2 Represents B,...., Class 26 represents Z
 
+Data dimension 321X1014
 
 -------------------------------------------------------------------------------------
 Once you are confident that your classifier works correctly,
@@ -153,8 +157,5 @@ of the needed data.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Write a brief report (5 pages or less) on your findings/results in task A, B, D, E.
 
--------------------------------------------------------------------------------
-The quiz will ask you to do something very similar to tasks A, B, C, D.
--------------------------------------------------------------------------------
+
